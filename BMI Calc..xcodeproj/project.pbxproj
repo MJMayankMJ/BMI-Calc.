@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		868D09672CED244300C2F57C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 868D09662CED244300C2F57C /* FirebaseAuth */; };
+		868D09692CED244300C2F57C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 868D09682CED244300C2F57C /* FirebaseFirestore */; };
+		868D096B2CED244300C2F57C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 868D096A2CED244300C2F57C /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8655F6E22CE8D53A003B2515 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868D09672CED244300C2F57C /* FirebaseAuth in Frameworks */,
+				868D09692CED244300C2F57C /* FirebaseFirestore in Frameworks */,
+				868D096B2CED244300C2F57C /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = "BMI Calc.";
 			packageProductDependencies = (
+				868D09662CED244300C2F57C /* FirebaseAuth */,
+				868D09682CED244300C2F57C /* FirebaseFirestore */,
+				868D096A2CED244300C2F57C /* FirebaseStorage */,
 			);
 			productName = "BMI Calc.";
 			productReference = 8655F6D12CE8D538003B2515 /* BMI Calc..app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 8655F6C82CE8D538003B2515;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				868D09652CED244300C2F57C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8655F6D22CE8D538003B2515 /* Products */;
 			projectDirPath = "";
@@ -403,12 +418,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank.BMI-Calc-";
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -431,12 +447,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mayank.BMI-Calc-";
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -552,6 +569,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		868D09652CED244300C2F57C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		868D09662CED244300C2F57C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868D09652CED244300C2F57C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		868D09682CED244300C2F57C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868D09652CED244300C2F57C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		868D096A2CED244300C2F57C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 868D09652CED244300C2F57C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8655F6C92CE8D538003B2515 /* Project object */;
 }
