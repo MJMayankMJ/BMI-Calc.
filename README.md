@@ -1,6 +1,8 @@
 # BMI Calculator App
 
 Welcome to the BMI Calculator App! This application is built using SwiftUI, following the MVVM architecture pattern, and integrates [Core Data](https://developer.apple.com/documentation/coredata) for local data storage and [Firebase](https://firebase.google.com/) for authentication and cloud data management.
+If you want an explanation here is the google drive link which contains video that explains this project ( https://drive.google.com/file/d/1E0rA5pvoh6PbZXl2Q4YpWW6pnQOvgpsL/view?usp=share_link )
+
 
 ## Features
 
